@@ -11,10 +11,10 @@ def match(array)
  matches = []
  words_sort.each do |word|
    if word=== match
-     array[words_sort.index(word)]
+     matches<<array[words_sort.index(word)]
    end
- end
-
+end
+matches
 
 
 
