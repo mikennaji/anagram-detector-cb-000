@@ -2,9 +2,7 @@
 class Anagram
   attr_accessor :word
   def instantiate(word)
-    @word = word 
+    @word = word
 end
 
 end
-
-    
