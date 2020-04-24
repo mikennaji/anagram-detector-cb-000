@@ -9,7 +9,7 @@ def match(array)
  words_sort = array.map { |item| item.chars.sort.join}
  match = @word.chars.sort.join
  matches = []
- words_sort.each_with_index do |word|
+ words_sort.each_with_index do |word, index|
    if word=== match
      matches<<array[index]
    end
