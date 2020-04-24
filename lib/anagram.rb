@@ -14,6 +14,13 @@ def match(array)
      matches<<array[words_sort.index(word)]
    end
 end
+  words_sort.all do |word|
+    if  word=== match
+      matches<<array[words_sort.index(word)]
+    end
+  end
+
+
 
 end
 
