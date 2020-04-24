@@ -9,9 +9,9 @@ def match(array)
  words_sort = array.map { |item| item.chars.sort.join}
  match = @word.chars.sort.join
  matches = []
- words_sort.each do |word|
+ words_sort.each_with_index do |word, index|
    if word=== match
-     matches<<array[words_sort.index(word)]
+     matches<<array[index]
    end
 end
 matches
