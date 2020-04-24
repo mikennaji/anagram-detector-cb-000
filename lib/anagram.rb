@@ -3,9 +3,11 @@ class Anagram
   attr_accessor :word
   def instantiate
     @word = word
-end
+  end
 
 def match(array)
   
+
+end
 
 end
