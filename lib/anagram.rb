@@ -8,8 +8,7 @@ class Anagram
 def match(array)
  words_sort = array.map { |item| item.chars.sort.join}
  match = @word.chars.sort.join
- if words_sort.include?(match)
-   array[words_sort.index(match)]
+ words_sort.any? { |word|word===match}
  end
 
 end
