@@ -6,7 +6,12 @@ class Anagram
   end
 
 def match(array)
-
+ words_sort = array.map { |item| item.chars.sort.join}
+ match = @word.chars.sort.join
+ if words_sort.include?(match)
+   match
+ end
+ 
 
 end
 
