@@ -12,11 +12,11 @@ def match(array)
  words_sort.any do |word|
    if word=== match
      matches<<array[words_sort.index(word)]
-   end 
+   end
 end
 matches
-     
- 
+
+
 
 end
 
