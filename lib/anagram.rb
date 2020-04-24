@@ -11,7 +11,7 @@ def match(array)
  matches = []
  words_sort.each do |word|
    if word=== match
-     matches<<array[words_sort.index(word)]
+     array[words_sort.index(word)]
    end
  end
 
